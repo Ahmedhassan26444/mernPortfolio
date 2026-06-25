@@ -6,7 +6,18 @@ import venusImage from "../../images/venus.jpg";
 import spaceImage from "../../images/space.jpg";
 import { Typography } from "@mui/material";
 import Timeline from "../Timeline/timeline";
-
+import {
+  SiCplusplus,
+  SiReact,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiCss,
+  SiHtml5,
+  SiThreedotjs,
+} from "react-icons/si";
+import YoutubeCard from "../YoutubeCard/youtubeCard";
 const Home = () => {
   useEffect(() => {
     const textureLoader = new THREE.TextureLoader();
@@ -19,7 +30,7 @@ const Home = () => {
       75,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      1000,
     );
 
     const canvas = document.querySelector(".homeCanvas");
@@ -102,29 +113,75 @@ const Home = () => {
         <Typography variant="h3">Skills</Typography>
         <div className="homeCubeSkills">
           <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU" 
-            alt="Face1" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face1"
+            />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU" 
-            alt="Face2" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face2"
+            />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU" 
-            alt="Face3" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face3"
+            />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU" 
-            alt="Face4" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face4"
+            />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU" 
-            alt="Face5" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face5"
+            />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
-             alt="Face6" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQwMVXxN-yI7fdrLKyFcNajn3LyonNQknAQ&usqp=CAU"
+              alt="Face6"
+            />
           </div>
+        </div>
+        <div className="cubeShadow"></div>
+        <div className="homeSkillsBox">
+          <SiCplusplus />
+          <SiReact />
+          <SiJavascript />
+          <SiMongodb />
+          <SiNodedotjs />
+          <SiExpress />
+          <SiCss />
+          <SiHtml5 />
+          <SiThreedotjs />
+        </div>
+      </div>
+      <div className="homeYoutube">
+        <Typography variant="h3"> YOUTUBE VIDEOS</Typography>
+
+        <div className="homeYoutubeWrapper">
+          <YoutubeCard
+            image="https://img.youtube.com/vi/h1igcrpG-Ek/maxresdefault.jpg"
+            title="Sample Video 1"
+          />
+          <YoutubeCard
+            image="https://img.youtube.com/vi/tVzUXW6siu0/maxresdefault.jpg"
+            title="Sample Video 2"
+          />
+          <YoutubeCard
+            image="https://img.youtube.com/vi/Ke90Tje7VS0/maxresdefault.jpg"
+            title="Sample Video 3"
+          />
+          <YoutubeCard
+            image="https://img.youtube.com/vi/d3jXofmF4Sg/maxresdefault.jpg"
+            title="Sample Video 4"
+          />
         </div>
       </div>
     </div>
